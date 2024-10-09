@@ -14,6 +14,8 @@ public class PlatformerMovement : MonoBehaviour
     float JumpCount;
     Rigidbody2D rb;
     Animator anim;
+    [SerializeField]
+    float ExtraGravSpeed = 1;
     void Start()
     {
         JumpCount = MaxJump + 1;
@@ -26,11 +28,19 @@ public class PlatformerMovement : MonoBehaviour
         Vector2 velocity = rb.velocity;
         velocity.x = moveX * MoveSpeed;
         rb.velocity = velocity;
-        if (Input.GetButtonDown("Jump") && Grounded || Input.GetButtonDown("Jump") && JumpCount >= 1)
+        if (Input.GetButtonDown("Jump") && !Grounded && JumpCount >= 1)
         {
-            rb.AddForce(new Vector2(0, 100 * JumpForce));
-            Grounded = false;
+            rb.velocity = new Vector2(rb.velocity.x, 10 * JumpForce);
             JumpCount -= 1;
+        }
+        if (Input.GetButtonDown("Jump") && Grounded)
+        {
+            rb.AddForce(new Vector2(0, 10 * JumpForce));
+            Grounded = false;
+        }
+        if (!Input.GetButton("Jump") || rb.velocity.y < 0)
+        {
+            rb.AddForce(new Vector2(0, -ExtraGravSpeed));
         }
         anim.SetFloat("y", velocity.y);
         anim.SetBool("grounded", Grounded);
@@ -51,7 +61,7 @@ public class PlatformerMovement : MonoBehaviour
         if (collision.gameObject.layer == 6)
         {
             Grounded = true;
-            JumpCount = MaxJump + 1;
+            JumpCount = MaxJump;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
