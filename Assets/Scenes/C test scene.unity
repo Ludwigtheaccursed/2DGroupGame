@@ -755,9 +755,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 5
-  JumpForce: 1
-  MaxJump: 1
-  ExtraGravSpeed: 1
+  JumpForce: 6
+  ExtraGravSpeed: 0.015
+  maxFallSpeed: 6
 --- !u!61 &1674108202
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -14,6 +14,11 @@ public class PlatformerMovement : MonoBehaviour
     Animator anim;
     [SerializeField]
     float ExtraGravSpeed = 1;
+    [SerializeField]
+    float maxFallSpeed = 6;
+
+    Vector2 velocity;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,19 +26,29 @@ public class PlatformerMovement : MonoBehaviour
     }
     void Update()
     {
+        // MOVEMENT
         float moveX = Input.GetAxis("Horizontal");
-        Vector2 velocity = rb.velocity;
+        velocity = rb.velocity;
         velocity.x = moveX * MoveSpeed;
-        rb.velocity = velocity;
         if (Input.GetButtonDown("Jump") && Grounded)
         {
-            rb.AddForce(new Vector2(0, 10 * JumpForce));
+            velocity.y = 10 * JumpForce;
             Grounded = false;
         }
         if (!Input.GetButton("Jump") || rb.velocity.y < 0)
         {
-            rb.AddForce(new Vector2(0, -ExtraGravSpeed));
+            velocity.y += -ExtraGravSpeed;
         }
+
+        if (velocity.y > maxFallSpeed)
+        {
+            velocity.y = maxFallSpeed;
+        }
+
+        rb.velocity = velocity;
+
+        // ANIMATIONS
+        /*
         anim.SetFloat("y", velocity.y);
         anim.SetBool("grounded", Grounded);
         int x = (int)Input.GetAxisRaw("Horizontal");
@@ -44,7 +59,7 @@ public class PlatformerMovement : MonoBehaviour
         }else if (x < 0)
         {
             GetComponent<SpriteRenderer>().flipX = true;
-        }
+        }*/
         
 
     }
