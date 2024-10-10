@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class PlatformerMovement : MonoBehaviour
@@ -9,16 +10,12 @@ public class PlatformerMovement : MonoBehaviour
     [SerializeField]
     float JumpForce = 3f;
     bool Grounded = false;
-    [SerializeField]
-    float MaxJump = 1;
-    float JumpCount;
     Rigidbody2D rb;
     Animator anim;
     [SerializeField]
     float ExtraGravSpeed = 1;
     void Start()
     {
-        JumpCount = MaxJump + 1;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -28,11 +25,6 @@ public class PlatformerMovement : MonoBehaviour
         Vector2 velocity = rb.velocity;
         velocity.x = moveX * MoveSpeed;
         rb.velocity = velocity;
-        if (Input.GetButtonDown("Jump") && !Grounded && JumpCount >= 1)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 10 * JumpForce);
-            JumpCount -= 1;
-        }
         if (Input.GetButtonDown("Jump") && Grounded)
         {
             rb.AddForce(new Vector2(0, 10 * JumpForce));
@@ -61,7 +53,13 @@ public class PlatformerMovement : MonoBehaviour
         if (collision.gameObject.layer == 6)
         {
             Grounded = true;
-            JumpCount = MaxJump;
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 6)
+        {
+            Grounded = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
