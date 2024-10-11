@@ -47,7 +47,7 @@ public class PlatformerMovement : MonoBehaviour
 
         rb.velocity = velocity;
 
-        // ANIMATIONS
+        // ANIMATIONS,UNCOMMENT WHEN NEEDED!
         /*
         anim.SetFloat("y", velocity.y);
         anim.SetBool("grounded", Grounded);
@@ -68,6 +68,11 @@ public class PlatformerMovement : MonoBehaviour
         if (collision.gameObject.layer == 6)
         {
             Grounded = true;
+        }
+        if(collision.gameObject.tag == "EnemyHead")
+        {
+            velocity.y = 10 * JumpForce;
+            rb.velocity = velocity;
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
