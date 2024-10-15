@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4033027646901793182}
   - component: {fileID: 4045725201911491913}
   - component: {fileID: 4090332608905966737}
+  - component: {fileID: 4523809546812367981}
   m_Layer: 0
   m_Name: EnemyPatrol(JumpOnHeadToKill)
   m_TagString: Enemy
@@ -117,7 +118,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &8212900985894592113
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -287,6 +288,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemySpeed: 5
+--- !u!114 &4523809546812367981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99451598448670240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5fe0645a2b93e4d9b81b9d4b150202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dead: 0
+  SpinSpeed: 1
 --- !u!1 &383759863216155529
 GameObject:
   m_ObjectHideFlags: 0

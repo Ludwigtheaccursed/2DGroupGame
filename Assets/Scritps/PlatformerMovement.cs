@@ -6,16 +6,16 @@ using UnityEngine;
 public class PlatformerMovement : MonoBehaviour
 {
     [SerializeField]
-    float MoveSpeed = 5f;
+    float MoveSpeed = 10f;
     [SerializeField]
-    float JumpForce = 3f;
+    float JumpForce = 1.15f;
     bool Grounded = false;
     Rigidbody2D rb;
     Animator anim;
     [SerializeField]
-    float ExtraGravSpeed = 1;
+    float ExtraGravSpeed = 0.015f;
     [SerializeField]
-    float maxFallSpeed = 6;
+    float maxFallSpeed = 100;
     [SerializeField]
     GameObject PlayerFist;
     bool Fliped = false;
