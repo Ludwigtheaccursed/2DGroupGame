@@ -16,6 +16,9 @@ public class PlatformerMovement : MonoBehaviour
     float ExtraGravSpeed = 1;
     [SerializeField]
     float maxFallSpeed = 6;
+    [SerializeField]
+    GameObject PlayerFist;
+    bool Fliped = false;
 
     Vector2 velocity;
 
@@ -48,7 +51,6 @@ public class PlatformerMovement : MonoBehaviour
         rb.velocity = velocity;
 
         // ANIMATIONS,UNCOMMENT WHEN NEEDED!
-        /*
         anim.SetFloat("y", velocity.y);
         anim.SetBool("grounded", Grounded);
         int x = (int)Input.GetAxisRaw("Horizontal");
@@ -59,9 +61,23 @@ public class PlatformerMovement : MonoBehaviour
         }else if (x < 0)
         {
             GetComponent<SpriteRenderer>().flipX = true;
-        }*/
-        
+        }
+        //Flip position code for player fists
+        if (GetComponent<SpriteRenderer>().flipX && !Fliped)
+        {
+            float xVal = PlayerFist.transform.localPosition.x;
+            xVal *= -1;
+            PlayerFist.transform.localPosition = new Vector2(xVal, PlayerFist.transform.localPosition.y);
+            Fliped = true;
+        }
+        if (!GetComponent<SpriteRenderer>().flipX && Fliped)
+        {
 
+            float xVal = PlayerFist.transform.localPosition.x;
+            xVal *= -1;
+            PlayerFist.transform.localPosition = new Vector2(xVal, PlayerFist.transform.localPosition.y);
+            Fliped = false;
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
