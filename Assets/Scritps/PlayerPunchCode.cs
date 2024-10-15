@@ -17,10 +17,11 @@ public class PlayerPunchCode : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.GetComponent<SpriteRenderer>.OrderInLayer = 100;
-        collision.gameObject.GetComponent<BoxCollider2D>.IsTrigger = true;
-        Vector3 SlapDirection = collision.transform.position;
+        //collision.gameObject.GetComponent<SpriteRenderer>.OrderInLayer = 100;
+        //collision.gameObject.GetComponent<BoxCollider2D>.IsTrigger = true;
+        Vector3 SlapDirection = collision.transform.position - Player.transform.position;
 
         collision.gameObject.GetComponent<Rigidbody2D>().velocity = SlapDirection * SlapForce * -1;
+        Debug.Log("punched");
     }
 }
