@@ -13,15 +13,24 @@ public class PlayerPunchCode : MonoBehaviour
     }
     void Update()
     {
-        Vector3 playerPosition = Player.transform.position;
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //collision.gameObject.GetComponent<SpriteRenderer>.OrderInLayer = 100;
-        //collision.gameObject.GetComponent<BoxCollider2D>.IsTrigger = true;
-        Vector3 SlapDirection = collision.transform.position - Player.transform.position;
-
-        collision.gameObject.GetComponent<Rigidbody2D>().velocity = SlapDirection * SlapForce * -1;
+        if (collision.tag == "Enemy")
+        {
+        //collision.GetComponent<SpriteRenderer>().OrderinLayer = 100;
+        collision.GetComponent<BoxCollider2D>().isTrigger = true;
+        collision.GetComponentInChildren<EnemyHealthJumpOnHead>().enabled = false;
+        collision.GetComponent<EnemyPatrolAI>().enabled = false;
+        collision.GetComponent<EnemyDieSpinn>().enabled = true;
+            
+        Vector3 playerPosition = Player.transform.position;
+        Vector3 collisionPosition = collision.transform.position;
+        Vector3 SlapDirection = collisionPosition - playerPosition + new Vector3 (0,1 + Random.Range(-0.5f, 0.5f),0);
+        SlapDirection.Normalize();
+        collision.GetComponent<Rigidbody2D>().velocity = SlapDirection * SlapForce;
         Debug.Log("punched");
+        }
     }
 }
