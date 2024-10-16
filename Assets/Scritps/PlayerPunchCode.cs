@@ -5,21 +5,38 @@ using UnityEngine;
 public class PlayerPunchCode : MonoBehaviour
 {
     [SerializeField]
+    float PunchSpeed = 1f;
+    [SerializeField]
     float SlapForce = 10f;
     GameObject Player;
+    float PunchTimer;
+    float PunchHoldTime;
+    bool PunchHold = false;
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
     }
     void Update()
     {
-
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Enemy")
+        PunchTimer += Time.deltaTime;
+        PunchHoldTime += Time.deltaTime;
+        if (Input.GetButtonDown("Fire1") && PunchTimer >= PunchSpeed)
         {
-        //collision.GetComponent<SpriteRenderer>().OrderinLayer = 100;
+            PunchTimer = 0;
+            PunchHoldTime = 0;
+            PunchHold = true;
+            Debug.Log("clicked");
+        }
+        if (PunchHoldTime >= 0.2)
+        {
+            PunchHold = false;
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy" && PunchHold)
+        {
+        collision.GetComponent<SpriteRenderer>().sortingOrder = 100;
         collision.GetComponent<BoxCollider2D>().isTrigger = true;
         collision.GetComponentInChildren<EnemyHealthJumpOnHead>().enabled = false;
         collision.GetComponent<EnemyPatrolAI>().enabled = false;
