@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ebe27e5bf31004488c0b7a138ed1296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemySpeed: 5
+  EnemySpeed: 1
 --- !u!114 &4523809546812367981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,13 +295,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99451598448670240}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd5fe0645a2b93e4d9b81b9d4b150202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dead: 0
-  SpinSpeed: 1
+  SpinSpeed: 5
 --- !u!1 &383759863216155529
 GameObject:
   m_ObjectHideFlags: 0
