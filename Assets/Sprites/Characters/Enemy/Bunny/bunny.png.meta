@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7a771b63c7e293842995a466b4379f57
+guid: be28f06de85724f46ad7e802666bdb48
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chairy-legs_0
+      name: bunny_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 967f8b28a20950d4ab99bc3b6ecd9c50
-      internalID: -440759213
+      spriteID: 99cc59ecb2c865e4e8f98bd5079157ee
+      internalID: -1682681784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chairy-legs_1
+      name: bunny_1
       rect:
         serializedVersion: 2
         x: 64
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83fff3bff323f6143bc94ce8eff8366b
-      internalID: 2029500438
+      spriteID: a49767e8a4cde0f469d2f05f4ca51f57
+      internalID: 35161506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chairy-legs_2
+      name: bunny_2
       rect:
         serializedVersion: 2
         x: 128
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9e240f5b8528324f9e8e024ae17a1d4
-      internalID: 1491788344
+      spriteID: 8efaab1938b39794fbba2c300851ee89
+      internalID: 2073383856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chairy-legs_3
+      name: bunny_3
       rect:
         serializedVersion: 2
         x: 192
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d7ebf4e518cc9345a6f1536665cdee7
-      internalID: 1259188111
+      spriteID: acf6313b0ae1db44dbbc62aa5d53a95d
+      internalID: 53460558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chairy-legs_4
+      name: bunny_4
       rect:
         serializedVersion: 2
         x: 256
@@ -195,50 +195,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebdefe3f636d23e479fcff602cd24518
-      internalID: -305680807
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chairy-legs_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e90e5ad32603ef418ae79071a81cde9
-      internalID: 1975013653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chairy-legs_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d658241aeef50b48a434c187d2e0186
-      internalID: 2111914381
+      spriteID: 1438d78d11796b34ea1c4cb88f2d367c
+      internalID: 1086921570
       vertices: []
       indices: 
       edges: []
@@ -254,13 +212,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      chairy-legs_0: -440759213
-      chairy-legs_1: 2029500438
-      chairy-legs_2: 1491788344
-      chairy-legs_3: 1259188111
-      chairy-legs_4: -305680807
-      chairy-legs_5: 1975013653
-      chairy-legs_6: 2111914381
+      bunny_0: -1682681784
+      bunny_1: 35161506
+      bunny_2: 2073383856
+      bunny_3: 53460558
+      bunny_4: 1086921570
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

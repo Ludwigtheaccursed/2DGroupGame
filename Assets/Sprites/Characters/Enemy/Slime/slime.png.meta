@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7a771b63c7e293842995a466b4379f57
+guid: 179ed7f016dcf9b4097d5e87c453e98f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,154 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chairy-legs_0
+      name: slime_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8834ca482aac72e48af178609bd55510
+      internalID: 1288167387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e57b3de24bb96a43bd260d6af2d69ce
+      internalID: -951409393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ce12125b01ca54594d83c1444c02b9
+      internalID: 1413389452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376a8b0fab678d641b7e21cc68730525
+      internalID: 1637568350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196ee1bfe8a83774d82b17c7e683ff0e
+      internalID: -302800996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcafd76917d9f0c4c8fef48990a68495
+      internalID: 793217197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd2239db74fdd94d974825a0178fb56
+      internalID: 1839339754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_7
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 967f8b28a20950d4ab99bc3b6ecd9c50
-      internalID: -440759213
+      spriteID: 2286f9bc7f8d23a49ab3d09e9d1f205e
+      internalID: -1941919719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chairy-legs_1
+      name: slime_8
       rect:
         serializedVersion: 2
         x: 64
@@ -132,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83fff3bff323f6143bc94ce8eff8366b
-      internalID: 2029500438
+      spriteID: 673e2f1662e64b747bb6cfbe93e41bb8
+      internalID: 1665851066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chairy-legs_2
+      name: slime_9
       rect:
         serializedVersion: 2
         x: 128
@@ -153,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9e240f5b8528324f9e8e024ae17a1d4
-      internalID: 1491788344
+      spriteID: 6e16f9727a8d97b41b276ae070a81101
+      internalID: 421827443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chairy-legs_3
+      name: slime_10
       rect:
         serializedVersion: 2
         x: 192
@@ -174,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d7ebf4e518cc9345a6f1536665cdee7
-      internalID: 1259188111
+      spriteID: f9b824327e2fe194b94a7138643d4238
+      internalID: -1471330891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chairy-legs_4
+      name: slime_11
       rect:
         serializedVersion: 2
         x: 256
@@ -195,50 +342,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebdefe3f636d23e479fcff602cd24518
-      internalID: -305680807
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chairy-legs_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e90e5ad32603ef418ae79071a81cde9
-      internalID: 1975013653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chairy-legs_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d658241aeef50b48a434c187d2e0186
-      internalID: 2111914381
+      spriteID: e5d612ab5e6b12043b0d68cea2567e79
+      internalID: -2091462322
       vertices: []
       indices: 
       edges: []
@@ -254,13 +359,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      chairy-legs_0: -440759213
-      chairy-legs_1: 2029500438
-      chairy-legs_2: 1491788344
-      chairy-legs_3: 1259188111
-      chairy-legs_4: -305680807
-      chairy-legs_5: 1975013653
-      chairy-legs_6: 2111914381
+      slime_0: 1288167387
+      slime_1: -951409393
+      slime_10: -1471330891
+      slime_11: -2091462322
+      slime_2: 1413389452
+      slime_3: 1637568350
+      slime_4: -302800996
+      slime_5: 793217197
+      slime_6: 1839339754
+      slime_7: -1941919719
+      slime_8: 1665851066
+      slime_9: 421827443
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
