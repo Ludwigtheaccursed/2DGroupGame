@@ -25,7 +25,6 @@ public class PlayerPunchCode : MonoBehaviour
             PunchTimer = 0;
             PunchHoldTime = 0;
             PunchHold = true;
-            Debug.Log("clicked");
         }
         if (PunchHoldTime >= 0.2)
         {
@@ -36,18 +35,17 @@ public class PlayerPunchCode : MonoBehaviour
     {
         if (collision.tag == "Enemy" && PunchHold)
         {
+        PunchHold = false;
         collision.GetComponent<SpriteRenderer>().sortingOrder = 100;
         collision.GetComponent<BoxCollider2D>().isTrigger = true;
         collision.GetComponentInChildren<EnemyHealthJumpOnHead>().enabled = false;
         collision.GetComponent<EnemyPatrolAI>().enabled = false;
         collision.GetComponent<EnemyDieSpinn>().enabled = true;
-            
         Vector3 playerPosition = Player.transform.position;
         Vector3 collisionPosition = collision.transform.position;
         Vector3 SlapDirection = collisionPosition - playerPosition + new Vector3 (0,1 + Random.Range(-0.5f, 0.5f),0);
         SlapDirection.Normalize();
         collision.GetComponent<Rigidbody2D>().velocity = SlapDirection * SlapForce;
-        Debug.Log("punched");
         }
     }
 }
