@@ -12,8 +12,6 @@ public class PlayerSpriteFlip : MonoBehaviour
     }
     void Update()
     {
-        float xVal = PlayerFist.transform.localPosition.x;
-        xVal *= -1;
-        PlayerFist.transform.localPosition = new Vector2(xVal, PlayerFist.transform.localPosition.y);
+
     }
 }

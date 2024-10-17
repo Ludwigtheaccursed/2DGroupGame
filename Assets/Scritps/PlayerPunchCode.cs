@@ -38,7 +38,7 @@ public class PlayerPunchCode : MonoBehaviour
         PunchHold = false;
         collision.GetComponent<SpriteRenderer>().sortingOrder = 100;
         collision.GetComponent<BoxCollider2D>().isTrigger = true;
-        collision.GetComponentInChildren<EnemyHealthJumpOnHead>().enabled = false;
+        //collision.GetComponentInChildren<EnemyHealthJumpOnHead>().enabled = false;
         collision.GetComponent<EnemyPatrolAI>().enabled = false;
         collision.GetComponent<EnemyDieSpinn>().enabled = true;
         Vector3 playerPosition = Player.transform.position;

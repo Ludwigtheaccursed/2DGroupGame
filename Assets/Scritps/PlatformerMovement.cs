@@ -19,9 +19,13 @@ public class PlatformerMovement : MonoBehaviour
     [SerializeField]
     GameObject PlayerFist;
     bool Fliped = false;
-
+    [SerializeField]
+    GameObject ChairBase;
+    [SerializeField]
+    GameObject ArmSprite;
     Vector2 velocity;
-
+    float FistOffset;
+    Vector2 FistOffsetPos;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,6 +37,7 @@ public class PlatformerMovement : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal");
         velocity = rb.velocity;
         velocity.x = moveX * MoveSpeed;
+        FistOffsetPos = PlayerFist.GetComponent<BoxCollider2D>().offset;
         if (Input.GetButtonDown("Jump") && Grounded)
         {
             velocity.y = 10 * JumpForce;
@@ -62,12 +67,22 @@ public class PlatformerMovement : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().flipX = true;
         }
-        //Flip position code for player fists
+        //Flip position code for player sprites
         if (GetComponent<SpriteRenderer>().flipX && !Fliped)
         {
             float xVal = PlayerFist.transform.localPosition.x;
             xVal *= -1;
             PlayerFist.transform.localPosition = new Vector2(xVal, PlayerFist.transform.localPosition.y);
+            FistOffset = FistOffsetPos.x;
+            FistOffset *= -1;
+            FistOffsetPos = new Vector2(FistOffset, FistOffsetPos.y);
+
+            float xVal2 = ArmSprite.transform.localPosition.x;
+            xVal2 *= -1;
+            ArmSprite.transform.localPosition = new Vector2(xVal2, ArmSprite.transform.localPosition.y);
+            ArmSprite.GetComponent<SpriteRenderer>().flipX = true;
+
+            ChairBase.GetComponent<SpriteRenderer>().flipX = true;
             Fliped = true;
         }
         if (!GetComponent<SpriteRenderer>().flipX && Fliped)
@@ -76,8 +91,19 @@ public class PlatformerMovement : MonoBehaviour
             float xVal = PlayerFist.transform.localPosition.x;
             xVal *= -1;
             PlayerFist.transform.localPosition = new Vector2(xVal, PlayerFist.transform.localPosition.y);
+            FistOffset = FistOffsetPos.x;
+            FistOffset *= -1;
+            FistOffsetPos = new Vector2(FistOffset, FistOffsetPos.y);
+
+            float xVal2 = ArmSprite.transform.localPosition.x;
+            xVal2 *= -1;
+            ArmSprite.transform.localPosition = new Vector2(xVal2, ArmSprite.transform.localPosition.y);
+            ArmSprite.GetComponent<SpriteRenderer>().flipX = false;
+            
+            ChairBase.GetComponent<SpriteRenderer>().flipX = false;
             Fliped = false;
         }
+        PlayerFist.GetComponent<BoxCollider2D>().offset = FistOffsetPos;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -85,11 +111,11 @@ public class PlatformerMovement : MonoBehaviour
         {
             Grounded = true;
         }
-        if(collision.gameObject.tag == "EnemyHead")
+        /*if(collision.gameObject.tag == "EnemyHead")
         {
             velocity.y = 10 * JumpForce;
             rb.velocity = velocity;
-        }
+        }*/
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
