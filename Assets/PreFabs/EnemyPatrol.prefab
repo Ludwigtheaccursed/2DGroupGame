@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4045725201911491913}
   - component: {fileID: 4090332608905966737}
   - component: {fileID: 4523809546812367981}
+  - component: {fileID: 3979763341181568688}
   m_Layer: 0
   m_Name: EnemyPatrol
   m_TagString: Enemy
@@ -300,3 +301,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpinSpeed: 5
+--- !u!114 &3979763341181568688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99451598448670240}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0823fe1ca0cc28a499229e68943958b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

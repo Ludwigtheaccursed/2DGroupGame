@@ -12,6 +12,8 @@ public class PlayerPunchCode : MonoBehaviour
     float PunchTimer;
     float PunchHoldTime;
     bool PunchHold = false;
+    [SerializeField]
+    bool AlwaysPunch = false;
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -20,7 +22,7 @@ public class PlayerPunchCode : MonoBehaviour
     {
         PunchTimer += Time.deltaTime;
         PunchHoldTime += Time.deltaTime;
-        if (Input.GetButtonDown("Fire1") && PunchTimer >= PunchSpeed)
+        if (Input.GetButtonDown("Fire1") && PunchTimer >= PunchSpeed || AlwaysPunch)
         {
             PunchTimer = 0;
             PunchHoldTime = 0;
@@ -41,6 +43,7 @@ public class PlayerPunchCode : MonoBehaviour
         //collision.GetComponentInChildren<EnemyHealthJumpOnHead>().enabled = false;
         collision.GetComponent<EnemyPatrolAI>().enabled = false;
         collision.GetComponent<EnemyDieSpinn>().enabled = true;
+        collision.GetComponent<EnemyDelete>().enabled = true;
         Vector3 playerPosition = Player.transform.position;
         Vector3 collisionPosition = collision.transform.position;
         Vector3 SlapDirection = collisionPosition - playerPosition + new Vector3 (0,1 + Random.Range(-0.5f, 0.5f),0);
