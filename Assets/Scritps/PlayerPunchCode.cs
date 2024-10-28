@@ -14,9 +14,11 @@ public class PlayerPunchCode : MonoBehaviour
     bool PunchHold = false;
     [SerializeField]
     bool AlwaysPunch = false;
+    float SlapForceeee;
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
+        SlapForceeee = SlapForce;
     }
     void Update()
     {
@@ -48,7 +50,16 @@ public class PlayerPunchCode : MonoBehaviour
         Vector3 collisionPosition = collision.transform.position;
         Vector3 SlapDirection = collisionPosition - playerPosition + new Vector3 (0,1 + Random.Range(-0.5f, 0.5f),0);
         SlapDirection.Normalize();
+        int random = Random.Range(1, 101);
+            if (random == 42)
+            {
+                SlapForce = 100;
+            }
+            else { 
+                SlapForce += Random.Range(-5, 5);
+            }
         collision.GetComponent<Rigidbody2D>().velocity = SlapDirection * SlapForce;
+        SlapForce = SlapForceeee;
         }
     }
 }
