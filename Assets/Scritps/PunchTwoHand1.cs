@@ -13,15 +13,17 @@ public class PunchTwoHand : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (Input.GetButtonDown("Fire1") && timer >= 0.5 && anim.GetBool("LastPunchLeft") == false)
+        if (Input.GetButtonDown("Fire1") && timer >= 0.5 && anim.GetBool("LastPunchL") == false)
         {
             anim.SetTrigger("Punch0");
-            anim.SetBool("LastPunchLeft", true);
+            anim.SetBool("LastPunchL", true);
+            timer = 0;
         }
-        if (Input.GetButtonDown("Fire1") && timer >= 0.5 && anim.GetBool("LastPunchLeft") == true)
+        else if (Input.GetButtonDown("Fire1") && timer >= 0.5 && anim.GetBool("LastPunchL") == true)
         {
             anim.SetTrigger("Punch0");
-            anim.SetBool("LastPunchLeft", false);
+            anim.SetBool("LastPunchL", false);
+            timer = 0;
         }
     }
 }
