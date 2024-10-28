@@ -16,6 +16,7 @@ public class PunchOneHand : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && timer >= 1)
         {
             anim.SetTrigger("Punch0");
+            timer = 0;
         }
     }
 }
