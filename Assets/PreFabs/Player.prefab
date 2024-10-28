@@ -147,6 +147,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3981660683978464703}
   - component: {fileID: 5951202878386588}
+  - component: {fileID: 3131332355402286993}
+  - component: {fileID: 8396787770353082241}
+  - component: {fileID: 4329716450312923767}
   m_Layer: 0
   m_Name: chairy-arm
   m_TagString: Untagged
@@ -221,6 +224,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &3131332355402286993
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4511585636422559904}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f01de11228790634e91b910ca466240d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8396787770353082241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4511585636422559904}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fa53d6ac3de19542aefc8c9d273400c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4329716450312923767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4511585636422559904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff0c605543e8d940811a15754e30b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4893482516787158540
 GameObject:
   m_ObjectHideFlags: 0
