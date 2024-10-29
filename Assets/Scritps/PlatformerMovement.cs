@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using UnityEditor.EditorTools;
 using UnityEngine;
 
 public class PlatformerMovement : MonoBehaviour
@@ -26,6 +27,8 @@ public class PlatformerMovement : MonoBehaviour
     Vector2 velocity;
     float FistOffset;
     Vector2 FistOffsetPos;
+    [SerializeField]
+    GameObject SunGlasses;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -83,6 +86,15 @@ public class PlatformerMovement : MonoBehaviour
             ArmSprite.GetComponent<SpriteRenderer>().flipX = true;
 
             ChairBase.GetComponent<SpriteRenderer>().flipX = true;
+            
+            GameObject SunGlasses2 = GameObject.FindGameObjectWithTag("VERYCOOLSUNGLASES");
+            if (SunGlasses2.GetComponent<EnemyDieSpinn>().enabled == false)
+            {
+             float xVal3 = SunGlasses.transform.localPosition.x;
+             xVal3 *= -1;
+             SunGlasses.transform.localPosition = new Vector2(xVal3, SunGlasses.transform.localPosition.y);
+             SunGlasses.GetComponent<SpriteRenderer>().flipX = true;
+            }
             Fliped = true;
         }
         if (!GetComponent<SpriteRenderer>().flipX && Fliped)
@@ -98,8 +110,18 @@ public class PlatformerMovement : MonoBehaviour
             float xVal2 = ArmSprite.transform.localPosition.x;
             xVal2 *= -1;
             ArmSprite.transform.localPosition = new Vector2(xVal2, ArmSprite.transform.localPosition.y);
+            
             ArmSprite.GetComponent<SpriteRenderer>().flipX = false;
             
+            GameObject SunGlasses2 = GameObject.FindGameObjectWithTag("VERYCOOLSUNGLASES");
+            if (SunGlasses2.GetComponent<EnemyDieSpinn>().enabled == false)
+            {
+             float xVal3 = SunGlasses.transform.localPosition.x;
+             xVal3 *= -1;
+             SunGlasses.transform.localPosition = new Vector2(xVal3, SunGlasses.transform.localPosition.y);
+             SunGlasses.GetComponent<SpriteRenderer>().flipX = false;
+            }
+
             ChairBase.GetComponent<SpriteRenderer>().flipX = false;
             Fliped = false;
         }

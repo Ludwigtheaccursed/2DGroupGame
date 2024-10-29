@@ -37,7 +37,7 @@ public class PlayerPunchCode : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy" && PunchHold)
+        if (collision.gameObject.layer == 8 && PunchHold)
         {
         PunchHold = false;
         collision.GetComponent<SpriteRenderer>().sortingOrder = 100;
