@@ -18,9 +18,9 @@ GameObject:
   - component: {fileID: 4090332608905966737}
   - component: {fileID: 4523809546812367981}
   - component: {fileID: 3979763341181568688}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyPatrol
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

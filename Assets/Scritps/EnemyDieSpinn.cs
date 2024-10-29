@@ -17,6 +17,5 @@ public class EnemyDieSpinn : MonoBehaviour
         Vector3 rot = transform.rotation.eulerAngles;
         rot.z += SpinSpeed * Time.deltaTime * 30 * RanRot;
         transform.rotation = Quaternion.Euler(rot);
-        Debug.Log("Dead");
     }
 }
