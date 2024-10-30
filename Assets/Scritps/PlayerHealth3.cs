@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth3 : MonoBehaviour
 {
-    float PlayerHealth = 2;
+    float PlayerHealth = 3;
     GameObject SunGlasses;
     bool Iframes = false;
     [SerializeField]
@@ -14,12 +14,14 @@ public class PlayerHealth3 : MonoBehaviour
     [SerializeField]
     float SunGlassesSpinSpeed = 1;
     float RanRot;
-    bool ran = true;
-    bool ran2 = true;
+    bool Ran = true;
+    bool Ran2 = true;
+    bool Ran3 = true;
     Vector3 CollidedEnemyPos;
     Vector3 SunGlassesPos;
     [SerializeField]
     float SunGlassesFlingSpeed = 10;
+    string EnemyTag;
     //"if you want to steal my code your gonna have to give me a big fat kiss on the mouth" -Cooper :3
     void Start()
     {
@@ -34,7 +36,11 @@ public class PlayerHealth3 : MonoBehaviour
             PlayerHealth -= 1;
             Iframes = true;
             IframeTimer = IframeDuration;
-            if (PlayerHealth == 1 && ran)
+            if (PlayerHealth == 2 && Ran3)
+            {
+                EnemyTag = collision.gameObject.tag;
+            }
+            if (PlayerHealth == 1 && Ran)
             {
                 CollidedEnemyPos = collision.transform.position;
                 SunGlassesPos = transform.position;
@@ -48,7 +54,15 @@ public class PlayerHealth3 : MonoBehaviour
         {
             Iframes = false;
         }
-        if (PlayerHealth == 1 && ran)
+        if (PlayerHealth == 2 && Ran3)
+        {
+            if (EnemyTag == "SludgeMonster")
+            {
+
+            }
+            Ran3 = false;
+        }
+        if (PlayerHealth == 1 && Ran)
         {
             Debug.Log("You Lost Your $1200 SunGlassese Nooooo");
             SunGlasses.GetComponent<EnemyDieSpinn>().enabled = true;
@@ -57,13 +71,13 @@ public class PlayerHealth3 : MonoBehaviour
             Vector3 SunGlasesFlingDir = (CollidedEnemyPos - SunGlassesPos) * 5 + new Vector3(0, Random.Range(5, 10), 0);
             SunGlasesFlingDir.Normalize();
             SunGlasses.GetComponent<Rigidbody2D>().velocity = SunGlasesFlingDir * SunGlassesFlingSpeed;
-            ran = false;
+            Ran = false;
         }
-        if (PlayerHealth <= 0 && ran2) 
+        if (PlayerHealth <= 0 && Ran2) 
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             Debug.Log("\"that sounds like a skill issue\"- Mike :3");
-            ran2 = false;
+            Ran2 = false;
         }
     }
 }

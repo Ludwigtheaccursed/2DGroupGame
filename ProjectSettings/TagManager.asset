@@ -6,8 +6,12 @@ TagManager:
   tags:
   - Enemy
   - EnemyHead
-  - Sludge Monster
   - VERYCOOLSUNGLASES
+  - StreetRat
+  - PreSchooler
+  - Gnome
+  - Vampire
+  - SludgeMonster
   layers:
   - Default
   - TransparentFX
