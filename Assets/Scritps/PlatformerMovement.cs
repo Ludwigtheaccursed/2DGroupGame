@@ -36,7 +36,7 @@ public class PlatformerMovement : MonoBehaviour
     }
     void Update()
     {
-        // MOVEMENT
+        // Movement
         float moveX = Input.GetAxis("Horizontal");
         velocity = rb.velocity;
         velocity.x = moveX * MoveSpeed;
@@ -87,8 +87,7 @@ public class PlatformerMovement : MonoBehaviour
 
             ChairBase.GetComponent<SpriteRenderer>().flipX = true;
             
-            GameObject SunGlasses2 = GameObject.FindGameObjectWithTag("VERYCOOLSUNGLASES");
-            if (SunGlasses2.GetComponent<EnemyDieSpinn>().enabled == false)
+            if (SunGlasses.GetComponent<EnemyDieSpinn>().enabled == false)
             {
              float xVal3 = SunGlasses.transform.localPosition.x;
              xVal3 *= -1;
@@ -113,8 +112,7 @@ public class PlatformerMovement : MonoBehaviour
             
             ArmSprite.GetComponent<SpriteRenderer>().flipX = false;
             
-            GameObject SunGlasses2 = GameObject.FindGameObjectWithTag("VERYCOOLSUNGLASES");
-            if (SunGlasses2.GetComponent<EnemyDieSpinn>().enabled == false)
+            if (SunGlasses.GetComponent<EnemyDieSpinn>().enabled == false)
             {
              float xVal3 = SunGlasses.transform.localPosition.x;
              xVal3 *= -1;
