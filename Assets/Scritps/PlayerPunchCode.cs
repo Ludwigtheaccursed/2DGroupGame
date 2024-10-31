@@ -40,6 +40,7 @@ public class PlayerPunchCode : MonoBehaviour
         if (collision.gameObject.layer == 8 && PunchHold)
         {
         PunchHold = false;
+        collision.gameObject.layer = 9;
         collision.GetComponent<SpriteRenderer>().sortingOrder = 100;
         collision.GetComponent<BoxCollider2D>().isTrigger = true;
         //collision.GetComponentInChildren<EnemyHealthJumpOnHead>().enabled = false;

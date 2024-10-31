@@ -31,6 +31,7 @@ public class PlayerHealth2 : MonoBehaviour
     {
         if (collision.gameObject.layer == 8 && !Iframes)
         {
+            collision.gameObject.layer = 9;
             PlayerHealth -= 1;
             Iframes = true;
             IframeTimer = IframeDuration;
