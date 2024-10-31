@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEditor.EditorTools;
 using UnityEngine;
 
@@ -29,6 +28,16 @@ public class PlatformerMovement : MonoBehaviour
     Vector2 FistOffsetPos;
     [SerializeField]
     GameObject SunGlasses;
+    [SerializeField]
+    GameObject PlayerHat0;
+    [SerializeField]
+    GameObject PlayerHat1;
+    [SerializeField]
+    GameObject PlayerHat2;
+    [SerializeField]
+    GameObject PlayerHat3;
+    [SerializeField]
+    GameObject PlayerHat4;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -86,7 +95,16 @@ public class PlatformerMovement : MonoBehaviour
             ArmSprite.GetComponent<SpriteRenderer>().flipX = true;
 
             ChairBase.GetComponent<SpriteRenderer>().flipX = true;
-            
+
+            if (PlayerHat0 != null)
+            {
+                PlayerHat0.GetComponent<SpriteRenderer>().flipX = false;
+                PlayerHat1.GetComponent<SpriteRenderer>().flipX = false;
+                PlayerHat2.GetComponent<SpriteRenderer>().flipX = false;
+                PlayerHat3.GetComponent<SpriteRenderer>().flipX = false;
+                PlayerHat4.GetComponent<SpriteRenderer>().flipX = false;
+            }
+
             if (SunGlasses.GetComponent<EnemyDieSpinn>().enabled == false)
             {
              float xVal3 = SunGlasses.transform.localPosition.x;
@@ -121,6 +139,15 @@ public class PlatformerMovement : MonoBehaviour
             }
 
             ChairBase.GetComponent<SpriteRenderer>().flipX = false;
+
+            if(PlayerHat0 != null)
+            {
+             PlayerHat0.GetComponent<SpriteRenderer>().flipX = true;
+             PlayerHat1.GetComponent<SpriteRenderer>().flipX = true;
+             PlayerHat2.GetComponent<SpriteRenderer>().flipX = true;
+             PlayerHat3.GetComponent<SpriteRenderer>().flipX = true;
+             PlayerHat4.GetComponent<SpriteRenderer>().flipX = true;
+            }
             Fliped = false;
         }
         PlayerFist.GetComponent<BoxCollider2D>().offset = FistOffsetPos;

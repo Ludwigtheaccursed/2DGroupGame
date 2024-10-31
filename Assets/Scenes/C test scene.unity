@@ -1694,6 +1694,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 784372224}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &622357375
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 539802741520219293, guid: a94c379bb4284f64a956744c68ad6bef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 539802741520219293, guid: a94c379bb4284f64a956744c68ad6bef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 539802741520219293, guid: a94c379bb4284f64a956744c68ad6bef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 539802741520219293, guid: a94c379bb4284f64a956744c68ad6bef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 539802741520219293, guid: a94c379bb4284f64a956744c68ad6bef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 539802741520219293, guid: a94c379bb4284f64a956744c68ad6bef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 539802741520219293, guid: a94c379bb4284f64a956744c68ad6bef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 539802741520219293, guid: a94c379bb4284f64a956744c68ad6bef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 539802741520219293, guid: a94c379bb4284f64a956744c68ad6bef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 539802741520219293, guid: a94c379bb4284f64a956744c68ad6bef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528854419899081564, guid: a94c379bb4284f64a956744c68ad6bef, type: 3}
+      propertyPath: m_Name
+      value: PlayerLV1(Fixed)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a94c379bb4284f64a956744c68ad6bef, type: 3}
 --- !u!1 &640654139
 GameObject:
   m_ObjectHideFlags: 0
@@ -3783,6 +3840,10 @@ PrefabInstance:
     - target: {fileID: 99451598448670240, guid: e1aa3bcc3ae3e2f439f31643b80f47d5, type: 3}
       propertyPath: m_Name
       value: EnemyPatrol (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 99451598448670240, guid: e1aa3bcc3ae3e2f439f31643b80f47d5, type: 3}
+      propertyPath: m_TagString
+      value: Gnome
       objectReference: {fileID: 0}
     - target: {fileID: 7529182723192220306, guid: e1aa3bcc3ae3e2f439f31643b80f47d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9035,6 +9096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPatrol (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 99451598448670240, guid: e1aa3bcc3ae3e2f439f31643b80f47d5, type: 3}
+      propertyPath: m_TagString
+      value: PreSchooler
+      objectReference: {fileID: 0}
     - target: {fileID: 7529182723192220306, guid: e1aa3bcc3ae3e2f439f31643b80f47d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.21
@@ -11507,6 +11572,11 @@ MonoBehaviour:
   ChairBase: {fileID: 457892972129857756}
   ArmSprite: {fileID: 7718024378438650294}
   SunGlasses: {fileID: 63059617999713725}
+  PlayerHat0: {fileID: 2108108294}
+  PlayerHat1: {fileID: 922224996}
+  PlayerHat2: {fileID: 153133301}
+  PlayerHat3: {fileID: 278994769}
+  PlayerHat4: {fileID: 146306440}
 --- !u!1 &4698740923866764769
 GameObject:
   m_ObjectHideFlags: 0
@@ -11903,7 +11973,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IframeDuration: 1
-  SunGlassesSpinSpeed: 1
   SunGlassesFlingSpeed: 10
 --- !u!114 &7411838958586634921
 MonoBehaviour:
@@ -12019,7 +12088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -12035,3 +12104,4 @@ SceneRoots:
   - {fileID: 1463457672}
   - {fileID: 467489184}
   - {fileID: 539802742431730972}
+  - {fileID: 622357375}

@@ -11,8 +11,6 @@ public class PlayerHealth2 : MonoBehaviour
     [SerializeField]
     float IframeDuration = 1;
     float IframeTimer;
-    [SerializeField]
-    float SunGlassesSpinSpeed = 1;
     float RanRot;
     bool ran = true;
     bool ran2 = true;
@@ -31,7 +29,6 @@ public class PlayerHealth2 : MonoBehaviour
     {
         if (collision.gameObject.layer == 8 && !Iframes)
         {
-            collision.gameObject.layer = 9;
             PlayerHealth -= 1;
             Iframes = true;
             IframeTimer = IframeDuration;

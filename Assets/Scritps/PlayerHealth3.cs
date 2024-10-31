@@ -11,8 +11,6 @@ public class PlayerHealth3 : MonoBehaviour
     [SerializeField]
     float IframeDuration = 1;
     float IframeTimer;
-    [SerializeField]
-    float SunGlassesSpinSpeed = 1;
     float RanRot;
     bool Ran = true;
     bool Ran2 = true;
@@ -58,8 +56,30 @@ public class PlayerHealth3 : MonoBehaviour
         {
             if (EnemyTag == "SludgeMonster")
             {
-                
+                GameObject Enemy = transform.GetChild(0).gameObject;
+                Enemy.GetComponent<SpriteRenderer>().enabled = true;
             }
+            if (EnemyTag == "StreetRat")
+            {
+                GameObject Enemy = transform.GetChild(1).gameObject;
+                Enemy.GetComponent<SpriteRenderer>().enabled = true;
+            }
+            if (EnemyTag == "PreSchooler")
+            {
+                GameObject Enemy = transform.GetChild(2).gameObject;
+                Enemy.GetComponent<SpriteRenderer>().enabled = true;
+            }
+            if (EnemyTag == "Gnome")
+            {
+                GameObject Enemy = transform.GetChild(3).gameObject;
+                Enemy.GetComponent<SpriteRenderer>().enabled = true;
+            }
+            if (EnemyTag == "Vampire")
+            {
+                GameObject Enemy = transform.GetChild(4).gameObject;
+                Enemy.GetComponent<SpriteRenderer>().enabled = true;
+            }
+            Debug.Log("Yooo look you got a little fren! :D");
             Ran3 = false;
         }
         if (PlayerHealth == 1 && Ran)
