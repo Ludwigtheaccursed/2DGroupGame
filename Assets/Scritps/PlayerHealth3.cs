@@ -37,6 +37,7 @@ public class PlayerHealth3 : MonoBehaviour
             if (PlayerHealth == 2 && Ran3)
             {
                 EnemyTag = collision.gameObject.tag;
+                Destroy(collision.gameObject);
             }
             if (PlayerHealth == 1 && Ran)
             {
