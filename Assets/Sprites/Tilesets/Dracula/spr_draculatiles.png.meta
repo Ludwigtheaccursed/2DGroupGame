@@ -101,9 +101,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 106.666664
-        width: 21.333334
-        height: 21.333334
+        y: 112
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +121,10 @@ TextureImporter:
       name: spr_draculatiles_1
       rect:
         serializedVersion: 2
-        x: 21
-        y: 106.666664
-        width: 21.333334
-        height: 21.333334
+        x: 16
+        y: 112
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,10 +142,10 @@ TextureImporter:
       name: spr_draculatiles_2
       rect:
         serializedVersion: 2
-        x: 42
-        y: 106.666664
-        width: 21.333334
-        height: 21.333334
+        x: 32
+        y: 112
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +163,10 @@ TextureImporter:
       name: spr_draculatiles_3
       rect:
         serializedVersion: 2
-        x: 63
-        y: 106.666664
-        width: 21.333334
-        height: 21.333334
+        x: 48
+        y: 112
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: spr_draculatiles_4
       rect:
         serializedVersion: 2
-        x: 84
-        y: 106.666664
-        width: 21.333334
-        height: 21.333334
+        x: 80
+        y: 112
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: spr_draculatiles_5
       rect:
         serializedVersion: 2
-        x: 105
-        y: 106.666664
-        width: 21.333334
-        height: 21.333334
+        x: 96
+        y: 112
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +226,10 @@ TextureImporter:
       name: spr_draculatiles_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 85.666664
-        width: 21.333334
-        height: 21.333334
+        x: 112
+        y: 112
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +247,10 @@ TextureImporter:
       name: spr_draculatiles_7
       rect:
         serializedVersion: 2
-        x: 21
-        y: 85.666664
-        width: 21.333334
-        height: 21.333334
+        x: 0
+        y: 96
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: spr_draculatiles_8
       rect:
         serializedVersion: 2
-        x: 42
-        y: 85.666664
-        width: 21.333334
-        height: 21.333334
+        x: 16
+        y: 96
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +289,10 @@ TextureImporter:
       name: spr_draculatiles_9
       rect:
         serializedVersion: 2
-        x: 63
-        y: 85.666664
-        width: 21.333334
-        height: 21.333334
+        x: 32
+        y: 96
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +310,10 @@ TextureImporter:
       name: spr_draculatiles_10
       rect:
         serializedVersion: 2
-        x: 84
-        y: 85.666664
-        width: 21.333334
-        height: 21.333334
+        x: 48
+        y: 96
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: spr_draculatiles_11
       rect:
         serializedVersion: 2
-        x: 105
-        y: 85.666664
-        width: 21.333334
-        height: 21.333334
+        x: 64
+        y: 96
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +352,10 @@ TextureImporter:
       name: spr_draculatiles_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64.666664
-        width: 21.333334
-        height: 21.333334
+        x: 80
+        y: 96
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +373,10 @@ TextureImporter:
       name: spr_draculatiles_13
       rect:
         serializedVersion: 2
-        x: 21
-        y: 64.666664
-        width: 21.333334
-        height: 21.333334
+        x: 96
+        y: 96
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,10 +394,10 @@ TextureImporter:
       name: spr_draculatiles_14
       rect:
         serializedVersion: 2
-        x: 42
-        y: 64.666664
-        width: 21.333334
-        height: 21.333334
+        x: 112
+        y: 96
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +415,10 @@ TextureImporter:
       name: spr_draculatiles_15
       rect:
         serializedVersion: 2
-        x: 63
-        y: 64.666664
-        width: 21.333334
-        height: 21.333334
+        x: 0
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,10 +436,10 @@ TextureImporter:
       name: spr_draculatiles_16
       rect:
         serializedVersion: 2
-        x: 84
-        y: 64.666664
-        width: 21.333334
-        height: 21.333334
+        x: 16
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +457,10 @@ TextureImporter:
       name: spr_draculatiles_17
       rect:
         serializedVersion: 2
-        x: 105
-        y: 64.666664
-        width: 21.333334
-        height: 21.333334
+        x: 32
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +478,10 @@ TextureImporter:
       name: spr_draculatiles_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 43.666664
-        width: 21.333334
-        height: 21.333334
+        x: 48
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,10 +499,10 @@ TextureImporter:
       name: spr_draculatiles_19
       rect:
         serializedVersion: 2
-        x: 21
-        y: 43.666664
-        width: 21.333334
-        height: 21.333334
+        x: 64
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,10 +520,10 @@ TextureImporter:
       name: spr_draculatiles_20
       rect:
         serializedVersion: 2
-        x: 42
-        y: 43.666664
-        width: 21.333334
-        height: 21.333334
+        x: 80
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -541,10 +541,10 @@ TextureImporter:
       name: spr_draculatiles_21
       rect:
         serializedVersion: 2
-        x: 63
-        y: 43.666664
-        width: 21.333334
-        height: 21.333334
+        x: 96
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,10 +562,10 @@ TextureImporter:
       name: spr_draculatiles_22
       rect:
         serializedVersion: 2
-        x: 84
-        y: 43.666664
-        width: 21.333334
-        height: 21.333334
+        x: 112
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -583,10 +583,10 @@ TextureImporter:
       name: spr_draculatiles_23
       rect:
         serializedVersion: 2
-        x: 105
-        y: 43.666664
-        width: 21.333334
-        height: 21.333334
+        x: 0
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,10 +604,10 @@ TextureImporter:
       name: spr_draculatiles_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 22.666666
-        width: 21.333334
-        height: 21.333334
+        x: 16
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,10 +625,10 @@ TextureImporter:
       name: spr_draculatiles_25
       rect:
         serializedVersion: 2
-        x: 21
-        y: 22.666666
-        width: 21.333334
-        height: 21.333334
+        x: 32
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,10 +646,10 @@ TextureImporter:
       name: spr_draculatiles_26
       rect:
         serializedVersion: 2
-        x: 42
-        y: 22.666666
-        width: 21.333334
-        height: 21.333334
+        x: 48
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -667,10 +667,10 @@ TextureImporter:
       name: spr_draculatiles_27
       rect:
         serializedVersion: 2
-        x: 63
-        y: 22.666666
-        width: 21.333334
-        height: 21.333334
+        x: 80
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,10 +688,10 @@ TextureImporter:
       name: spr_draculatiles_28
       rect:
         serializedVersion: 2
-        x: 84
-        y: 22.666666
-        width: 21.333334
-        height: 21.333334
+        x: 96
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -709,10 +709,10 @@ TextureImporter:
       name: spr_draculatiles_29
       rect:
         serializedVersion: 2
-        x: 105
-        y: 22.666666
-        width: 21.333334
-        height: 21.333334
+        x: 112
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -730,10 +730,10 @@ TextureImporter:
       name: spr_draculatiles_30
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1.666666
-        width: 21.333334
-        height: 21.333334
+        x: 48
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -751,10 +751,10 @@ TextureImporter:
       name: spr_draculatiles_31
       rect:
         serializedVersion: 2
-        x: 21
-        y: 1.666666
-        width: 21.333334
-        height: 21.333334
+        x: 64
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,10 +772,10 @@ TextureImporter:
       name: spr_draculatiles_32
       rect:
         serializedVersion: 2
-        x: 42
-        y: 1.666666
-        width: 21.333334
-        height: 21.333334
+        x: 80
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -793,10 +793,10 @@ TextureImporter:
       name: spr_draculatiles_33
       rect:
         serializedVersion: 2
-        x: 63
-        y: 1.666666
-        width: 21.333334
-        height: 21.333334
+        x: 96
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,10 +814,10 @@ TextureImporter:
       name: spr_draculatiles_34
       rect:
         serializedVersion: 2
-        x: 84
-        y: 1.666666
-        width: 21.333334
-        height: 21.333334
+        x: 112
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,10 +835,10 @@ TextureImporter:
       name: spr_draculatiles_35
       rect:
         serializedVersion: 2
-        x: 105
-        y: 1.666666
-        width: 21.333334
-        height: 21.333334
+        x: 0
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -848,6 +848,405 @@ TextureImporter:
       bones: []
       spriteID: 72b3cdadc7b6aa043bec6dff55e35746
       internalID: -1806771427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f2c1ddec8a53d41a54fa8c2eb15872
+      internalID: -1383786425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_37
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e6fde9348398a49a34991991a91596
+      internalID: -1389713726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69f07f6ce3fe1449b77c54a992a2949
+      internalID: 682371276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_39
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d5628224f8c3a488cf31619922f70e
+      internalID: 810087883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_40
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8469895405ae7b45b34fa0cfa3f8bfe
+      internalID: 1053653904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_41
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24688c13f7183b8479b0861df7b719f2
+      internalID: 372248833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74c5b67e182e6943a94482037f91f1d
+      internalID: 1849633248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_43
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32204968b0546949b04aedad66e46e4
+      internalID: -1547984151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_44
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429f42da366f3724b8b90ccc86aaae96
+      internalID: -1380254936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_45
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8b0a1ab963eac4bbbd3c70e5be2fb3
+      internalID: 1704178591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_46
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2773f0fe5433cf04baea1071ec545f7a
+      internalID: -549546618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_47
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e0f43792c5ba4418c4e90e408f0d4b
+      internalID: -346529545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_48
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281f6bfeced937a449e224898bc5fcfe
+      internalID: 1035141082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f8496d743e541468b6c8d3be54c83d
+      internalID: -1491985106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_50
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1480454d31a96e54ca79184ff529c905
+      internalID: -861338179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062c204f16733e648ace8da5d221a884
+      internalID: -150454580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32487710742ec44593835f7aec5aa0f
+      internalID: 337743264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_53
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fb6154fddccfc4896b494a5d8b2893
+      internalID: 564250651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_draculatiles_54
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5083214ecc9c2764a8dffdd96b34d0c0
+      internalID: 496352369
       vertices: []
       indices: 
       edges: []
@@ -893,8 +1292,27 @@ TextureImporter:
       spr_draculatiles_33: 1848592978
       spr_draculatiles_34: 597333801
       spr_draculatiles_35: -1806771427
+      spr_draculatiles_36: -1383786425
+      spr_draculatiles_37: -1389713726
+      spr_draculatiles_38: 682371276
+      spr_draculatiles_39: 810087883
       spr_draculatiles_4: 1546194482
+      spr_draculatiles_40: 1053653904
+      spr_draculatiles_41: 372248833
+      spr_draculatiles_42: 1849633248
+      spr_draculatiles_43: -1547984151
+      spr_draculatiles_44: -1380254936
+      spr_draculatiles_45: 1704178591
+      spr_draculatiles_46: -549546618
+      spr_draculatiles_47: -346529545
+      spr_draculatiles_48: 1035141082
+      spr_draculatiles_49: -1491985106
       spr_draculatiles_5: -1681671030
+      spr_draculatiles_50: -861338179
+      spr_draculatiles_51: -150454580
+      spr_draculatiles_52: 337743264
+      spr_draculatiles_53: 564250651
+      spr_draculatiles_54: 496352369
       spr_draculatiles_6: 579218102
       spr_draculatiles_7: 1104837725
       spr_draculatiles_8: 1793042927
