@@ -448,7 +448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IframeDuration: 2
-  SunGlassesSpinSpeed: 1
   SunGlassesFlingSpeed: 10
 --- !u!1 &4098929701308757920
 GameObject:
@@ -462,7 +461,7 @@ GameObject:
   - component: {fileID: 6177142234981109826}
   m_Layer: 0
   m_Name: PlayerFloorHitBox
-  m_TagString: Untagged
+  m_TagString: PlayerFloorHitBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -937,6 +936,11 @@ MonoBehaviour:
   ChairBase: {fileID: 457892971820761437}
   ArmSprite: {fileID: 7718024379213346871}
   SunGlasses: {fileID: 63059617235567676}
+  PlayerHat0: {fileID: 0}
+  PlayerHat1: {fileID: 0}
+  PlayerHat2: {fileID: 0}
+  PlayerHat3: {fileID: 0}
+  PlayerHat4: {fileID: 0}
 --- !u!61 &7092664182600946931
 BoxCollider2D:
   m_ObjectHideFlags: 0

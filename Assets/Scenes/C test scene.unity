@@ -11316,7 +11316,7 @@ GameObject:
   - component: {fileID: 2459370226348242875}
   - component: {fileID: 6657813111358054333}
   - component: {fileID: 6691014210094822265}
-  - component: {fileID: 3678030652317371840}
+  - component: {fileID: 6691014210094822266}
   - component: {fileID: 5768858601514576345}
   m_Layer: 0
   m_Name: PlayerLV4
@@ -11628,33 +11628,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 9000047003440961424}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3678030652317371840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1688778056406934602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25b2b68f948c5ec4bab756f8a5303cc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 10
-  JumpForce: 1.15
-  SlowFallSpeed: 3
-  SlowFallGrav: 0.2
-  ExtraGravSpeed: 0.015
-  maxFallSpeed: 100
-  PlayerFist: {fileID: 2082603987901485328}
-  ChairBase: {fileID: 25441063123433092}
-  ArmSprite: {fileID: 4067766031365641227}
-  SunGlasses: {fileID: 4032076565413457855}
-  PlayerHat0: {fileID: 5244306227924353796}
-  PlayerHat1: {fileID: 7106700204264579331}
-  PlayerHat2: {fileID: 4855167754038150731}
-  PlayerHat3: {fileID: 2942658165735306830}
-  PlayerHat4: {fileID: 6401644531817802668}
 --- !u!61 &3789413134078803389
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11687,7 +11660,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.07, y: 0.23}
+  m_Offset: {x: -0.07, y: 0.12}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -11698,7 +11671,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1, y: 1.8}
+  m_Size: {x: 1.1, y: 2}
   m_EdgeRadius: 0
 --- !u!1 &4032076565413457855
 GameObject:
@@ -11982,10 +11955,10 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.28, y: -0.67}
+  m_Offset: {x: -0.28, y: -0.88}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.22}
     oldSize: {x: 4, y: 4}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -12152,6 +12125,33 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &6691014210094822266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688778056406934602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ed2156f4da3b04388c6c5c2aec96c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 10
+  JumpForce: 1.15
+  SlowFallSpeed: 3
+  SlowFallGrav: 0.2
+  ExtraGravSpeed: 0.015
+  maxFallSpeed: 100
+  PlayerFist: {fileID: 2082603987901485328}
+  ChairBase: {fileID: 25441063123433092}
+  ArmSprite: {fileID: 4067766031365641227}
+  SunGlasses: {fileID: 4032076565413457855}
+  PlayerHat0: {fileID: 5244306227924353796}
+  PlayerHat1: {fileID: 7106700204264579331}
+  PlayerHat2: {fileID: 4855167754038150731}
+  PlayerHat3: {fileID: 2942658165735306830}
+  PlayerHat4: {fileID: 6401644531817802668}
 --- !u!81 &6723972155510285890
 AudioListener:
   m_ObjectHideFlags: 0
@@ -12246,7 +12246,7 @@ GameObject:
   - component: {fileID: 3789413134078803389}
   m_Layer: 0
   m_Name: PlayerFloorHitBox
-  m_TagString: Untagged
+  m_TagString: PlayerFloorHitBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

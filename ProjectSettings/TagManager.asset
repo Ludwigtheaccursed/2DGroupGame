@@ -12,6 +12,7 @@ TagManager:
   - Gnome
   - Vampire
   - SludgeMonster
+  - PlayerFloorHitBox
   layers:
   - Default
   - TransparentFX
