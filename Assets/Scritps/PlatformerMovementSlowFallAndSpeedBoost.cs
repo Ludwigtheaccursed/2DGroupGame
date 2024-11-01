@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.EditorTools;
 using UnityEngine;
 
-public class PlatformerMovementSlowFall : MonoBehaviour
+public class PlatformerMovementSlowFallAndSpeedBoost : MonoBehaviour
 {
     [SerializeField]
     float MoveSpeed = 10f;
@@ -15,7 +15,6 @@ public class PlatformerMovementSlowFall : MonoBehaviour
     float SlowFallGrav = 0.2f;
     bool Grounded = false;
     Rigidbody2D rb;
-    Animator anim;
     Animator anim1;
     [SerializeField]
     float ExtraGravSpeed = 0.015f;
@@ -47,7 +46,6 @@ public class PlatformerMovementSlowFall : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
         anim1 = ChairBase.GetComponent<Animator>();
         gravityScale = rb.gravityScale;
     }
@@ -56,7 +54,7 @@ public class PlatformerMovementSlowFall : MonoBehaviour
         // Movement
         float moveX = Input.GetAxis("Horizontal");
         velocity = rb.velocity;
-        velocity.x = moveX * MoveSpeed;
+        velocity.x = moveX * MoveSpeed * 1.2f; // The 1.2 multy is for the wheels speed boost
         FistOffsetPos = PlayerFist.GetComponent<BoxCollider2D>().offset;
         if (Input.GetButtonDown("Jump") && Grounded)
         {
@@ -89,11 +87,7 @@ public class PlatformerMovementSlowFall : MonoBehaviour
         rb.velocity = velocity;
 
         // ANIMATIONS,UNCOMMENT WHEN NEEDED!
-        
-        anim.SetFloat("y", velocity.y);
-        anim.SetBool("grounded", Grounded);
         int x = (int)Input.GetAxisRaw("Horizontal");
-        anim.SetInteger("x", x);
         if (x > 0)
         {
             GetComponent<SpriteRenderer>().flipX = false;
