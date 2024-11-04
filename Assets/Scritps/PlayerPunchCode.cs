@@ -14,11 +14,11 @@ public class PlayerPunchCode : MonoBehaviour
     bool PunchHold = false;
     [SerializeField]
     bool AlwaysPunch = false;
-    float SlapForceeee;
+    float SlapForceDefalut;
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
-        SlapForceeee = SlapForce;
+        SlapForceDefalut = SlapForce;
     }
     void Update()
     {
@@ -40,6 +40,7 @@ public class PlayerPunchCode : MonoBehaviour
         if (collision.gameObject.layer == 8 && PunchHold)
         {
         PunchHold = false;
+        collision.gameObject.layer = 9;
         collision.GetComponent<SpriteRenderer>().sortingOrder = 100;
         collision.GetComponent<BoxCollider2D>().isTrigger = true;
         //collision.GetComponentInChildren<EnemyHealthJumpOnHead>().enabled = false;
@@ -59,7 +60,7 @@ public class PlayerPunchCode : MonoBehaviour
                 SlapForce += Random.Range(-5, 5);
             }
         collision.GetComponent<Rigidbody2D>().velocity = SlapDirection * SlapForce;
-        SlapForce = SlapForceeee;
+        SlapForce = SlapForceDefalut;
         }
     }
 }

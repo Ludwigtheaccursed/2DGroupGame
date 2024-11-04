@@ -6,8 +6,13 @@ TagManager:
   tags:
   - Enemy
   - EnemyHead
-  - Sludge Monster
   - VERYCOOLSUNGLASES
+  - StreetRat
+  - PreSchooler
+  - Gnome
+  - Vampire
+  - SludgeMonster
+  - PlayerFloorHitBox
   layers:
   - Default
   - TransparentFX
@@ -18,7 +23,7 @@ TagManager:
   - Ground
   - enemyHead
   - Enemy
-  - 
+  - EnemyDeath
   - 
   - 
   - 
