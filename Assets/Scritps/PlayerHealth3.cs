@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth3 : MonoBehaviour
 {
-    float PlayerHealth = 3;
+    public float PlayerHealth = 3;
     GameObject SunGlasses;
     bool Iframes = false;
     [SerializeField]
