@@ -40,7 +40,7 @@ public class PlayerPunchCode : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         
-        if (collision.gameObject.layer == 8 && PunchHold)
+        if (collision.gameObject.layer == 8 && PunchHold && collision.gameObject.tag != "PreSchooler")
         {
         PunchHold = false;
         collision.gameObject.layer = 9;
@@ -71,6 +71,14 @@ public class PlayerPunchCode : MonoBehaviour
             }
         collision.GetComponent<Rigidbody2D>().velocity = SlapDirection * SlapForce;
         SlapForce = SlapForceDefalut;
+        } else if (collision.gameObject.layer == 8 && PunchHold && collision.gameObject.tag == "PreSchooler")
+        {
+            collision.GetComponentInChildren<Animator>().SetBool("IsDead", true);
+            collision.GetComponent<EnemyPatrolAI>().enabled = false;
+            collision.gameObject.layer = 9;
+            collision.GetComponent<Rigidbody2D>().velocity = new Vector2 (0, 0);
         }
+
+
     }
 }
