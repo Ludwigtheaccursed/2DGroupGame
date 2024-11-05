@@ -6,6 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/(Max) Garbage Land.unity
+    guid: f6d941537a6b5b845a11c88aabf106dc
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 66bd49d909759e547b1a57aa546b1ca9
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/(Max) Aboned City).unity
+    guid: b3386765eda89c741a2daa529e7c5d00
+  - enabled: 1
+    path: Assets/Scenes/(Max) Castle.unity
+    guid: 44b8356a746f6284ea689f795181e873
+  - enabled: 1
+    path: Assets/Scenes/(Max) Forest.unity
+    guid: ad015b70cb8d61d46ac9accadc348b74
+  - enabled: 1
+    path: Assets/Scenes/(Max) PreSchoo.unity
+    guid: 583555c9cb08d9849b794df0054c2b88
+  - enabled: 1
+    path: Assets/Scenes/(Max) Squingles basement.unity
+    guid: 702acf2effcd3954385d3f7ecb105b56
   m_configObjects: {}

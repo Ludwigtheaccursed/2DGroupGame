@@ -26,7 +26,7 @@ public class PlayerPunchCode : MonoBehaviour
     {
         PunchTimer += Time.deltaTime;
         PunchHoldTime += Time.deltaTime;
-        if (Input.GetButtonDown("Fire1") && PunchTimer >= PunchSpeed || AlwaysPunch)
+        if (Input.GetButtonDown("Fire1") && PunchTimer >= PunchSpeed && Time.timeScale == 1 || AlwaysPunch)
         {
             PunchTimer = 0;
             PunchHoldTime = 0;

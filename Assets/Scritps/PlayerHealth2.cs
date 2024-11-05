@@ -18,12 +18,14 @@ public class PlayerHealth2 : MonoBehaviour
     Vector3 SunGlassesPos;
     [SerializeField]
     float SunGlassesFlingSpeed = 10;
+    GameObject can;
     //"if you want to steal my code your gonna have to give me a big fat kiss on the mouth" -Cooper :3
     void Start()
     {
         SunGlasses = GameObject.FindGameObjectWithTag("VERYCOOLSUNGLASES");
         IframeTimer = IframeDuration;
         RanRot = Random.Range(-5.5f, 5.5f);
+        can = GameObject.FindGameObjectWithTag("DeathScreen");
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -59,7 +61,7 @@ public class PlayerHealth2 : MonoBehaviour
         }
         if (PlayerHealth <= 0 && ran2) 
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            can.GetComponent<Canvas>().enabled = true;
             Debug.Log("\"that sounds like a skill issue\"- Mike :3");
             ran2 = false;
         }
