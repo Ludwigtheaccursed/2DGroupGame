@@ -9,6 +9,8 @@ public class StreetRatAI : MonoBehaviour
     float chaseSpeed = 5f;
     [SerializeField]
     float chaseDistance = 7f;
+    [SerializeField]
+    float chaseDistanceVert = 3f;
     GameObject player;
     Animator anim;
     SpriteRenderer RatSprite;
@@ -39,7 +41,7 @@ public class StreetRatAI : MonoBehaviour
         {
             RatSprite.flipX = false;
         }
-        if (playerPos.x - transform.position.x <= chaseDistance)
+        if (playerPos.x - transform.position.x <= chaseDistance && playerPos.y -transform.position.y <= chaseDistanceVert)
         {
             Vector3 movedir = playerPos - transform.position;
             movedir.Normalize();
