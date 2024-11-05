@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -32.6, y: -0.5, z: 0}
-  m_LocalScale: {x: 2, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3705322831694230436}
@@ -199,8 +199,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fa272a81599a884aa4a230bcc40eda2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 8
-  chaseDistance: 8
+  chaseSpeed: 4
+  chaseDistance: 2
+  chaseDistanceVert: 3
 --- !u!1 &6320519026574152030
 GameObject:
   m_ObjectHideFlags: 0
