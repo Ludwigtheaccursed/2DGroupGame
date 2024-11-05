@@ -14,7 +14,7 @@ public class GnomeACS : MonoBehaviour
         anim = gameObject.GetComponent<Animator>();
         rb = gameObject.GetComponentInParent<Rigidbody2D>();
         bc = gameObject.GetComponentInParent<BoxCollider2D>();
-    }
+    } //"you see me deailing this chair's butt" - Jessie
     void Update()
     {
         if (rb.velocity.x > 0)
