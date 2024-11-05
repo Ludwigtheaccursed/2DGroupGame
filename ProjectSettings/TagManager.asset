@@ -13,6 +13,7 @@ TagManager:
   - Vampire
   - SludgeMonster
   - PlayerFloorHitBox
+  - PlayerHitBox
   layers:
   - Default
   - TransparentFX

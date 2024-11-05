@@ -11,20 +11,34 @@ public class StreetRatAI : MonoBehaviour
     float chaseDistance = 7f;
     GameObject player;
     Animator anim;
+    SpriteRenderer RatSprite;
     int vel;
     Vector3 playerPos;
     
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        anim = GetComponentInChildren<Animator>();
-        vel =  (int)GetComponent<Rigidbody2D>().velocity.x;
-        
+        anim = transform.Find("RatSprite").GetComponent<Animator>();
+        RatSprite = transform.Find("RatSprite").GetComponent<SpriteRenderer>();
+
     }
     void Update()
     {
+        int rana = Random.Range(1, 200);
+        if (rana == 7) {
+            anim.SetTrigger("FlinchTrigger");
+        }
+        vel = (int)GetComponent<Rigidbody2D>().velocity.x;
         playerPos = player.transform.position;
-        anim.SetFloat("X", vel);
+        anim.SetInteger("X", vel);
+        if (playerPos.x - transform.position.x >= 1)
+        {
+            RatSprite.flipX = true;
+        }
+        if (playerPos.x - transform.position.x <= 1)
+        {
+            RatSprite.flipX = false;
+        }
         if (playerPos.x - transform.position.x <= chaseDistance)
         {
             Vector3 movedir = playerPos - transform.position;

@@ -15,12 +15,15 @@ public class Void : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (GameObject.FindGameObjectWithTag("player").GetComponent<PlayerHealth3>() != null)
+        if (GameObject.Find("PlayerHitBox").GetComponent<PlayerHealth3>() != null)
         {
-         GameObject.FindGameObjectWithTag("player").GetComponent<PlayerHealth3>().PlayerHealth = 0;
+         GameObject.Find("PlayerHitBox").GetComponent<PlayerHealth3>().PlayerHealth = 0;
          Debug.Log("DiedToVoid");
         }
+        else {
+            Debug.Log("eeee"); 
+                }
     }
 }

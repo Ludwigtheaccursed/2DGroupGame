@@ -340,6 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ac9865964c565341b09d6f55ca3f4bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerHealth: 3
   IframeDuration: 1
   SunGlassesFlingSpeed: 10
 --- !u!1 &2965686879635114145
@@ -1324,7 +1325,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: -440759213, guid: 7a771b63c7e293842995a466b4379f57, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
