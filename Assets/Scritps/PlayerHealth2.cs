@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth2 : MonoBehaviour
 {
-    float PlayerHealth = 2;
+    public float PlayerHealth = 2;
     GameObject SunGlasses;
     bool Iframes = false;
     [SerializeField]
@@ -27,7 +27,7 @@ public class PlayerHealth2 : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 8 && !Iframes)
+        if (collision.gameObject.layer == 8 && !Iframes && collision.gameObject.tag != "MyDad")
         {
             PlayerHealth -= 1;
             Iframes = true;

@@ -15,10 +15,12 @@ public class PlayerPunchCode : MonoBehaviour
     [SerializeField]
     bool AlwaysPunch = false;
     float SlapForceDefalut;
+    int ratGoofy;
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         SlapForceDefalut = SlapForce;
+        ratGoofy = Random.Range(1, 101);
     }
     void Update()
     {
@@ -37,15 +39,23 @@ public class PlayerPunchCode : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 8 && PunchHold)
+        
+        if (collision.gameObject.layer == 8 && PunchHold && collision.gameObject.tag != "PreSchooler" && collision.gameObject.tag != "MyDad")
         {
         PunchHold = false;
         collision.gameObject.layer = 9;
         collision.GetComponent<SpriteRenderer>().sortingOrder = 100;
         collision.GetComponent<BoxCollider2D>().isTrigger = true;
         //collision.GetComponentInChildren<EnemyHealthJumpOnHead>().enabled = false;
-        collision.GetComponent<EnemyPatrolAI>().enabled = false;
-        collision.GetComponent<EnemyDieSpinn>().enabled = true;
+        if (collision.GetComponent<EnemyPatrolAI>() != null)
+            {
+                collision.GetComponent<EnemyPatrolAI>().enabled = true;
+            }
+        if (collision.GetComponent<StreetRatAI>() != null && ratGoofy != 42)
+            {
+                collision.GetComponent<StreetRatAI>().enabled = false;
+            }
+            collision.GetComponent<EnemyDieSpinn>().enabled = true;
         collision.GetComponent<EnemyDelete>().enabled = true;
         Vector3 playerPosition = Player.transform.position;
         Vector3 collisionPosition = collision.transform.position;
@@ -61,6 +71,20 @@ public class PlayerPunchCode : MonoBehaviour
             }
         collision.GetComponent<Rigidbody2D>().velocity = SlapDirection * SlapForce;
         SlapForce = SlapForceDefalut;
+        } else if (collision.gameObject.layer == 8 && PunchHold && collision.gameObject.tag == "PreSchooler")
+        {
+            collision.GetComponentInChildren<Animator>().SetBool("IsDead", true);
+            collision.GetComponent<EnemyPatrolAI>().enabled = false;
+            collision.gameObject.layer = 9;
+            collision.GetComponent<Rigidbody2D>().velocity = new Vector2 (0, 0);
+        } else if (collision.gameObject.layer == 8 && PunchHold && collision.gameObject.tag == "MyDad")
+        {
+            collision.GetComponent<MyDad>().enabled = false;
+            GameObject.Find("MyDadLegs").GetComponent<SpriteRenderer>().enabled = false;
+            GameObject.Find("MyDadSprite").GetComponent<SpriteRenderer>().enabled = false;
+            GameObject.Find("TombStone").GetComponent<SpriteRenderer>().enabled = true;
+            collision.GetComponent<Rigidbody2D>().velocity = new Vector2 (0, 0);
+            collision.gameObject.layer = 9;
         }
     }
 }

@@ -13,6 +13,8 @@ TagManager:
   - Vampire
   - SludgeMonster
   - PlayerFloorHitBox
+  - PlayerHitBox
+  - MyDad
   layers:
   - Default
   - TransparentFX
