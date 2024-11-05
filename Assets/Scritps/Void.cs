@@ -22,6 +22,11 @@ public class Void : MonoBehaviour
          GameObject.Find("PlayerHitBox").GetComponent<PlayerHealth3>().PlayerHealth = 0;
          Debug.Log("DiedToVoid");
         }
+        if (GameObject.Find("PlayerHitBox").GetComponent<PlayerHealth2>() != null)
+        {
+            GameObject.Find("PlayerHitBox").GetComponent<PlayerHealth2>().PlayerHealth = 0;
+            Debug.Log("DiedToVoid");
+        }
         else {
             Debug.Log("eeee"); 
                 }

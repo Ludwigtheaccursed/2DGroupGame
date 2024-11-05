@@ -29,7 +29,7 @@ public class PlayerHealth3 : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 8 && !Iframes)
+        if (collision.gameObject.layer == 8 && !Iframes && collision.gameObject.tag != "MyDad")
         {
             PlayerHealth -= 1;
             Iframes = true;
