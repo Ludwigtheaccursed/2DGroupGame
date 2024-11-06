@@ -74,6 +74,7 @@ public class PlayerPunchCode : MonoBehaviour
         } else if (collision.gameObject.layer == 8 && PunchHold && collision.gameObject.tag == "PreSchooler")
         {
             collision.GetComponentInChildren<Animator>().SetBool("IsDead", true);
+            collision.GetComponentInChildren<SludgeMonsterACS>().enabled = false;
             collision.GetComponent<EnemyPatrolAI>().enabled = false;
             collision.gameObject.layer = 9;
             collision.GetComponent<Rigidbody2D>().velocity = new Vector2 (0, 0);
