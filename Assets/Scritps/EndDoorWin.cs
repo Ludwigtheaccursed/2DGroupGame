@@ -5,26 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class EndDoorWin : MonoBehaviour
 {
-    
-
-    // Start is called before the first frame update
+    [SerializeField]
+    GameObject levelCompleteCanvase;
     void Start()
     {
 
     }
-
-    // Update is called once per frame
     void Update()
     {
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
-        if (collision.gameObject.tag == "EndDoor")
+        if (collision.tag == "Player")
         {
-            SceneManager.LoadScene("Win");
+            levelCompleteCanvase.GetComponent<Canvas>().enabled = true;
         }
     }
-    
+
 }

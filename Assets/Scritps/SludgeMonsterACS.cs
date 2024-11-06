@@ -26,6 +26,7 @@ public class SludgeMonsterACS : MonoBehaviour
         if (gameObject.GetComponentInParent<EnemyDieSpinn>().enabled == true)
         {
             anim.SetBool("IsDead", true);
+            Debug.Log("WHY");
         }
     }
 }

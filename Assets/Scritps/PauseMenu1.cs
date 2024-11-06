@@ -7,7 +7,7 @@ public class PauseMenu1 : MonoBehaviour
 {
     void Start()
     {
-        GetComponent<Canvas>().enabled = false;
+
     }
     void Update()
     {
@@ -37,6 +37,10 @@ public class PauseMenu1 : MonoBehaviour
     public void LoadLevel6()
     {
         SceneManager.LoadScene("(Max) Squingles basement");
+    }
+    public void LoadLevelStart()
+    {
+        SceneManager.LoadScene("StartMenu");
     }
     public void QuitGame()
     {

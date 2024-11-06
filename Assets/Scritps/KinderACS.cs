@@ -15,11 +15,11 @@ public class KinderACS : MonoBehaviour
     }
     void Update()
     {
-        if (rb.velocity.x > 0)
+        if (rb.velocity.x > 0 && anim.GetBool("isDead") == false)
         {
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
-        if (rb.velocity.x < 0)
+        if (rb.velocity.x < 0 && anim.GetBool("isDead") == false)
         {
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
